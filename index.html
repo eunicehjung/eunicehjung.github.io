@@ -6,65 +6,88 @@
     <title>My First Website</title>
     
     <style>
+        /* --- Base & Layout --- */
         body {
             /* Sets the font stack with Helvetica as the priority */
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             font-size: 15px; /* Sets a clean, small-ish base font size */
             line-height: 1.6;
-            background-color: #FFFFFF; /* Clean white background */
-            color: #333; /* Dark grey text for readability */
-            margin: 0 auto;
-            max-width: 800px;
-            padding: 20px;
+            background-color: #FFFFFF;
+            color: #333;
+            margin: 0; /* Remove default body margin */
         }
         
-        /* --- Navigation & Links --- */
-        nav {
-            /* A very light, creamy yellow background */
-            background-color: #FFF9E0; 
-            border: 1px solid #FFECB3; /* A slightly darker yellow border */
-            padding: 15px 20px;
-            border-radius: 8px;
-            margin-bottom: 30px;
+        .page-wrapper {
+            display: flex; /* Creates the side-by-side column layout */
         }
-        nav ul {
+
+        /* --- Left Side Navigation Panel --- */
+        .side-nav {
+            flex: 0 0 220px; /* Don't grow, don't shrink, base width 220px */
+            background-color: #FFF9E0; 
+            border-right: 1px solid #FFECB3; /* Border on the right */
+            padding: 30px 20px;
+
+            /* This makes the nav "sticky" as you scroll */
+            height: 100vh; /* Full viewport height */
+            position: sticky;
+            top: 0;
+            overflow-y: auto; /* Adds scrollbar if nav items get too long */
+        }
+        .side-nav h2 {
+            color: #444;
+            border-bottom: 2px solid #FFD700; 
+            padding-bottom: 5px;
+            margin-top: 0; /* Remove top margin for the h2 */
+            font-size: 1.2em;
+        }
+        .side-nav ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
         }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
+        .side-nav li {
+            display: block; /* Stack links vertically */
+            margin-bottom: 12px; /* Space them out */
         }
-        a {
-            color: #B8860B; /* A strong, dark goldenrod color for links */
+        .side-nav a {
+            color: #B8860B;
             text-decoration: none;
             font-weight: bold;
+            display: block; /* Makes the whole area clickable */
+            padding: 5px;
+            border-radius: 4px;
         }
-        a:hover {
-            color: #333; /* Darken on hover */
-            text-decoration: underline;
+        .side-nav a:hover {
+            color: #333;
+            background-color: #FFECB3; /* Add a hover background */
+            text-decoration: none;
         }
 
-        /* --- Headings --- */
-        h1 {
-            /* A rich, dark gold for the main title */
+        /* --- Main Content Area (Right Side) --- */
+        .main-content {
+            flex: 1; /* Takes up all remaining space */
+            padding: 20px 40px; /* Add horizontal and vertical padding */
+            max-width: 800px; /* Constrain text width for readability */
+        }
+
+        /* --- Headings (in main content) --- */
+        .main-content h1 {
             color: #D9A000; 
             margin-top: 0;
         }
-        h2 {
+        .main-content h2 {
             color: #444;
-            /* Using the yellow as an accent border */
             border-bottom: 2px solid #FFD700; 
             padding-bottom: 5px;
-            margin-top: 40px; /* Add spacing between sections */
+            margin-top: 40px; 
         }
 
-        /* --- Images & Sections --- */
+        /* --- Other Elements --- */
         img {
             max-width: 100%;
             height: auto;
-            border-radius: 8px; /* Softer rounded corners */
+            border-radius: 8px;
             margin-top: 10px;
         }
         section {
@@ -81,66 +104,68 @@
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to Eunice Hyeyun Jung's Website!</h1>
-    </header>
+    <div class="page-wrapper">
 
-    <nav>
-        <h2 style="display: none;">Navigation</h2>
-        <ul>
-            <li><a href="#section-images">See the Images</a></li>
-            <li><a href="#section-anchors">Learn About Anchors</a></li>
-            <li><a href="#section-contact">Contact Me</a></li>
-        </ul>
-    </nav>
+        <nav class="side-nav">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#section-images">See the Images</a></li>
+                <li><a href="#section-anchors">Learn About Anchors</a></li>
+                <li><a href="#section-contact">Contact Me</a></li>
+            </ul>
+        </nav>
 
-    <main>
-        <section id="section-images">
-            <h2>My Images</h2>
-            
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            </p>
+        <div class="main-content">
+            <header>
+                <h1>Welcome to My Rich Website!</h1>
+            </header>
 
-            <p>Here is an example of adding an image from an external website:</p>
-            
-            <p>Here is how you add an image from your own repository (e.g., in an 'images' folder):</p>
-            
-            </section>
+            <main>
+                <section id="section-images">
+                    <h2>My Images</h2>
+                    
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
 
-        <hr>
+                    <p>Here is an example of adding an image from an external website:</p>
+                    
+                    <p>Here is how you add an image from your own repository (e.g., in an 'images' folder):</p>
+                    
+                    </section>
 
-        <section id="section-anchors">
-            <h2>How Anchor Links Work</h2>
+                <hr>
 
-            <p>
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor accumsan tincidunt.
-            </p>
-            
-            <ol>
-                <li><strong>The Link:</strong> You clicked on a link, which is an `<a>` tag: <br>
-                    <code>&lt;a href="#section-anchors"&gt;Learn About Anchors&lt;/a&gt;</code>
-                </li>
-                <li><strong>The Destination:</strong> The page automatically scrolled to the element (this `<section>`) that has the matching `id` attribute: <br>
-                    <code>&lt;section id="section-anchors"&gt;...&lt;/section&gt;</code>
-                </li>
-            </ol>
-            <p>You can add an `id` to almost any HTML element, like `<h2>`, `<p>`, or `<div>`.</p>
-        </section>
-        
-        <hr>
+                <section id="section-anchors">
+                    <h2>How Anchor Links Work</h2>
 
-        <section id="section-contact">
-            <h2>Contact</h2>
-            
-            <p>
-                Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-            </p>
-            
-            <a href="#">Back to Top</a>
-        </section>
+                    <p>
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor accumsan tincidunt.
+                    </p>
+                    
+                    <ol>
+                        <li><strong>The Link:</strong> You clicked on a link, which is an `<a>` tag: <br>
+                            <code>&lt;a href="#section-anchors"&gt;Learn About Anchors&lt;/a&gt;</code>
+                        </li>
+                        <li><strong>The Destination:</strong> The page automatically scrolled to the element (this `<section>`) that has the matching `id` attribute: <br>
+                            <code>&lt;section id="section-anchors"&gt;...&lt;/section&gt;</code>
+                        </li>
+                    </ol>
+                    <p>You can add an `id` to almost any HTML element, like `<h2>`, `<p>`, or `<div>`.</p>
+                </section>
+                
+                <hr>
 
-    </main>
+                <section id="section-contact">
+                    <h2>Contact</h2>
+                    
+                    <p>
+                        Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                    </p>
+                    
+                    <a href="#">Back to Top</a>
+                </section>
 
-</body>
+            </main>
+        </div> </div> </body>
 </html>
