@@ -7,36 +7,75 @@
     
     <style>
         body {
-            font-family: Arial, sans-serif;
+            /* Sets the font stack with Helvetica as the priority */
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 15px; /* Sets a clean, small-ish base font size */
             line-height: 1.6;
+            background-color: #FFFFFF; /* Clean white background */
+            color: #333; /* Dark grey text for readability */
             margin: 0 auto;
             max-width: 800px;
             padding: 20px;
         }
+        
+        /* --- Navigation & Links --- */
         nav {
-            background: #f4f4f4;
-            padding: 10px;
-            border-radius: 5px;
+            /* A very light, creamy yellow background */
+            background-color: #FFF9E0; 
+            border: 1px solid #FFECB3; /* A slightly darker yellow border */
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
         }
         nav ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
         }
         nav ul li {
             display: inline;
-            margin-right: 15px;
+            margin-right: 20px;
         }
+        a {
+            color: #B8860B; /* A strong, dark goldenrod color for links */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #333; /* Darken on hover */
+            text-decoration: underline;
+        }
+
+        /* --- Headings --- */
+        h1 {
+            /* A rich, dark gold for the main title */
+            color: #D9A000; 
+            margin-top: 0;
+        }
+        h2 {
+            color: #444;
+            /* Using the yellow as an accent border */
+            border-bottom: 2px solid #FFD700; 
+            padding-bottom: 5px;
+            margin-top: 40px; /* Add spacing between sections */
+        }
+
+        /* --- Images & Sections --- */
         img {
-            max-width: 100%; /* Makes images responsive */
+            max-width: 100%;
             height: auto;
-            border-radius: 5px;
+            border-radius: 8px; /* Softer rounded corners */
+            margin-top: 10px;
         }
         section {
-            padding-top: 20px; /* Adds space for the anchor link jump */
-            margin-bottom: 20px;
+            /* This padding helps when jumping to an anchor link */
+            padding-top: 10px; 
         }
-        h1, h2 {
-            color: #333;
+        hr {
+            border: 0;
+            height: 1px;
+            background: #f0f0f0;
+            margin: 40px 0;
         }
     </style>
 </head>
@@ -47,7 +86,7 @@
     </header>
 
     <nav>
-        <h2>Navigation</h2>
+        <h2 style="display: none;">Navigation</h2>
         <ul>
             <li><a href="#section-images">See the Images</a></li>
             <li><a href="#section-anchors">Learn About Anchors</a></li>
@@ -58,24 +97,26 @@
     <main>
         <section id="section-images">
             <h2>My Images</h2>
-            <p>Here is an example of adding an image from an external website:</p>
-          <!-- <img 
-              src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" 
-              alt="A laptop on a wooden desk showing code"
-              width="600"> -->
+            
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
 
-            <p>Here is how you add an image from your own repository:</p>
-            <!-- <img 
-                src="images/my-photo.jpg" 
-                alt="A description of my personal photo"
-                width="600"> -->
-        </section>
+            <p>Here is an example of adding an image from an external website:</p>
+            
+            <p>Here is how you add an image from your own repository (e.g., in an 'images' folder):</p>
+            
+            </section>
 
         <hr>
 
         <section id="section-anchors">
             <h2>How Anchor Links Work</h2>
-            <p>This section explains how you got here!</p>
+
+            <p>
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor accumsan tincidunt.
+            </p>
+            
             <ol>
                 <li><strong>The Link:</strong> You clicked on a link, which is an `<a>` tag: <br>
                     <code>&lt;a href="#section-anchors"&gt;Learn About Anchors&lt;/a&gt;</code>
@@ -91,7 +132,11 @@
 
         <section id="section-contact">
             <h2>Contact</h2>
-            <p>You can find me on GitHub!</p>
+            
+            <p>
+                Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+            </p>
+            
             <a href="#">Back to Top</a>
         </section>
 
