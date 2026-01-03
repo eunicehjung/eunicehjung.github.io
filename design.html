@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design - Eunice H Jung</title>
+    <style>
+        /* --- COPIED STYLES FROM INDEX.HTML --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Helvetica", "Arial", sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.4;
+            font-size: 1.2rem;
+            
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 0 2rem; 
+
+            text-align: left;
+            font-weight: 400;
+        }
+
+        p {
+            text-align-last: left;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 1.6rem 0;
+            
+            border-bottom: none; 
+            
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 1);
+            z-index: 1000;
+        }
+
+        .logo a {
+            font-size: 1.4rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: #000;
+            text-transform: uppercase;
+        }
+
+        nav a {
+            margin-left: 2rem;
+            text-decoration: none;
+            color: #808080;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content Sections */
+        section {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.2rem; 
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .content-block {
+            max-width: 100%;
+            font-size: 1rem;
+        }
+
+        /* Lists and Links */
+        ul {
+            list-style: none;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        p a, li a {
+            color: #000000;
+            text-decoration: underline;
+            transition: color 0.1s;
+        }
+
+        p a:hover, li a:hover {
+            color: #808080;
+        }
+
+        /* Smooth Scroll & Footer */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 120px;
+        }
+
+        footer {
+            padding: 2rem 0;
+            font-size: 1rem;
+            color: #808080;
+            text-align: left;
+        }
+    </style>
+</head>
+<body id="top">
+
+    <header>
+        <div class="logo">
+            <a href="index.html">Eunice Jung</a>
+        </div>
+        <nav>
+            <a href="index.html">About</a>
+            
+            <a href="index.html#research">Research</a>
+            
+            <a href="#top" style="color: #000;">Design</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Design">
+            <h2>Design</h2>
+            <div class="content-block">
+                <p>Selected architectural and research Design.</p>
+                
+                <ul>
+                    <li>
+                        <a href="#">Project Name 1</a> — Description coming soon.
+                    </li>
+                    <li>
+                        <a href="#">Project Name 2</a> — Description coming soon.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 Eunice Hyeyun Jung
+    </footer>
+
+</body>
+</html>
