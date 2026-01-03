@@ -13,15 +13,22 @@
         }
 
         body {
-            /* CHANGE 1: Font set to Helvetica */
             font-family: "Helvetica", "Arial", sans-serif;
             background-color: #ffffff;
             color: #000000;
-            line-height: 1.4; /* Slightly tighter for Helvetica */
-            padding: 0 10%;
-            
-            /* CHANGE 2: Unified font size (1.2rem matches the previous Logo size) */
+            line-height: 1.4;
             font-size: 1.2rem;
+            
+            /* --- CHANGE 1: CENTERING THE LAYOUT --- */
+            /* This sets a maximum width for your content */
+            max-width: 1000px; 
+            
+            /* This centers that 1000px block in the middle of the screen */
+            /* 0 = top/bottom margins, auto = left/right margins calculated automatically */
+            margin: 0 auto; 
+            
+            /* padding ensures text doesn't touch the edges on small mobile screens */
+            padding: 0 2rem; 
         }
 
         /* Header Navigation */
@@ -106,7 +113,7 @@
 
     <header>
         <div class="logo">
-            <a href="index.html">My Name</a>
+            <a href="index.html">EUNICE H JUNG</a>
         </div>
         <nav>
             <a href="#about">About</a>
