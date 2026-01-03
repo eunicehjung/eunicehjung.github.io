@@ -35,7 +35,7 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start; /* Aligns text to top if lines wrap */
-            padding: 2rem 0;
+            padding: 1.6rem 0;
             
             border-bottom: none; 
             
@@ -46,8 +46,8 @@
         }
 
         .logo a {
-            font-size: 1.6rem;
-            font-weight: 400;
+            font-size: 1.4rem;
+            font-weight: 600;
             
             text-decoration: none;
             color: #000;
@@ -69,8 +69,8 @@
 
         /* Content Sections */
         section {
-            padding-top: 2rem;
-            padding-bottom: 6rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
         }
 
         h2 {
@@ -82,6 +82,64 @@
 
         .content-block {
             max-width: 100%;
+            font-size: 1rem;
+        }
+
+        .about-layout {
+            display: flex;
+
+            flex-direction: row-reverse;
+
+            align-items: flex-start;
+            gap: 1.5rem;
+
+            justify-content: space-between;
+        }
+
+        .bio-image-wrapper {
+            width: 250px;
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+        .bio-pic {
+            width: 250px;
+            display: block
+        }
+
+        .image-caption {
+            font-size: 0.9rem;
+            margin-top: 0.3rem;
+            line-height: 1.4;
+            color: #808080;
+        }
+
+        /* MOBILE RESPONSIVENESS */
+        @media (max-width: 768px) {
+            .about-layout {
+                flex-direction: column-reverse;
+                gap: 1.5rem;
+            }
+
+            .bio-pic {
+                width: 250px;
+                max-width: 100%;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+
+        b {
+            font-weight: 600;
+        }
+
+        g {
+            color: #808080;
+            font-weight: 400;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
         }
 
         ul {
@@ -92,41 +150,71 @@
             margin-bottom: 0.5rem;
         }
 
+        p a, li a {
+            color: #808080;
+            text-decoration: underline;
+            transition: color 0.1s;
+        }
+
+        p a:hover, li a:hover {
+            color: #000000;
+        }
+
         html {
             scroll-behavior: smooth;
+
+            scroll-padding-top: 120px;
         }
 
         footer {
             padding: 2rem 0;
-            font-size: 1.2rem;
+            font-size: 1rem;
+            color: #808080;
+
             text-align: left;
         }
     </style>
 </head>
 <body>
-
+    <body id="top"></body>
     <header>
         <div class="logo">
-            <a href="index.html"><b>EUNICE JUNG,</b></a>
+            <a href="index.html">Eunice Jung</a>
         </div>
         <nav>
-            <a href="#about">About</a>
+            <a href="#top">About</a>
             <a href="#research">Research</a>
-            <a href="projects.html">Projects</a>
+            <a href="design.html">Design</a>
         </nav>
     </header>
 
     <main>
         <section id="about">
             <!-- <h2>About</h2> -->
-            <div class="content-block">
-                <p>I am a licensed architect in Massachusetts and a PhD student at Stanford University in Civil and Environmental Engineering, focused on connecting building design with data-driven Life Cycle Assessment (LCA).<p>
-                <p>I worked for eight years in the architecture industry, specializing in complex facades and building systems for high-rise buildings. This hands-on experience inspired me to tackle the industry's critical challenge of high embodied carbon.<p>
-                <p>At Stanford University, I develop quantitative methods for embodied carbon reduction of building design through LCA using Large Language Models (LLMs). This research aims to create an LLM-integrated framework, such as an AI agent, that empowers designers and engineers to reduce embodied carbon, particularly during the critical early building design phases.</p>
+            <div class="content-block about-layout">
+
+                <div class="bio-image-wrapper">
+                    <img src="profile.jpg" alt="Portrait of Eunice Jung" class="bio-pic">
+
+                    <p class="image-caption">
+                        <a href="https://eeri.stanford.edu/student-spotlight-0/eunice-hyeyun-jung" target="_blank">Stanford EERI Story</a><br>
+                        <a href="https://www.linkedin.com/posts/cbt-architects_congratulations-to-cbts-own-eunice-hyeyun-activity-7141130534205693952-Y9NS/" target="_blank">BosNOMA Recognition Award</a>
+
+                    </p>
+                </div>
+
+                <div class="bio-text">
+                    <p>I am a licensed architect in Massachusetts and a PhD student at Stanford University in <a href="https://cee.stanford.edu/" target="_blank">Civil and Environmental Engineering</a>, advised by <a href="https://profiles.stanford.edu/michael-lepech" target="_blank">Michael Lepech</a> and <a href="https://sdgc.stanford.edu/people/jie-wang" target="_blank">Jie Wang</a>. I focus on connecting building design with data-driven Life Cycle Assessment.<p>
+                    <p>I worked for eight years in the architecture industry, specializing in complex facades and building systems for high-rise buildings after obtaining a <a href="https://www.gsd.harvard.edu/architecture/programs/master-of-architecture-i/" target="_blank">Master of Architecture</a> from Harvard Graduate School of Design. This hands-on experience inspired me to tackle the industry's critical challenge of high embodied carbon.<p>
+                    <p>At Stanford University, I develop quantitative methods for <b>embodied carbon reduction of building design using Large Language Models</b>. My research aims to create an LLM-integrated framework, such as an AI agent, that empowers designers and engineers to reduce embodied carbon during critical early phases.</p>
+                    <p><a href="mailto:ehjung@stanford.edu">ehjung[at]stanford.edu</a> | <a href="https://www.linkedin.com/in/eunicehjung/" target="_blank">LinkedIn</a> | <a href="https://scholar.google.com/citations?user=3CByBJEAAAAJ&hl=en&inst=5746887945952177237" target="_blank">Google Scholar</a> | <a href="cv.pdf" target="_blank">CV (Dec 2025)</a><br>
+                    </p>
+                </div>
+
             </div>
         </section>
 
-        <section id="Research">
+        <section id="research">
             <h2>Research</h2>
             <div class="content-block">
                 <ul>
@@ -138,7 +226,7 @@
     </main>
 
     <footer>
-        &copy; Eunice H Jung
+        &copy; 2026 Eunice Hyeyun Jung
     </footer>
 
 </body>
