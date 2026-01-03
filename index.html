@@ -19,16 +19,15 @@
             line-height: 1.4;
             font-size: 1.2rem;
             
-            /* --- CHANGE 1: CENTERING THE LAYOUT --- */
-            /* This sets a maximum width for your content */
             max-width: 1000px; 
-            
-            /* This centers that 1000px block in the middle of the screen */
-            /* 0 = top/bottom margins, auto = left/right margins calculated automatically */
             margin: 0 auto; 
-            
-            /* padding ensures text doesn't touch the edges on small mobile screens */
             padding: 0 2rem; 
+
+            text-align: justify;
+        }
+
+        p {
+            text-align-last: left;
         }
 
         /* Header Navigation */
@@ -38,7 +37,6 @@
             align-items: flex-start; /* Aligns text to top if lines wrap */
             padding: 2rem 0;
             
-            /* CHANGE 4: Removed the border-bottom line */
             border-bottom: none; 
             
             position: sticky;
@@ -48,7 +46,7 @@
         }
 
         .logo a {
-            font-weight: 700; /* Bolding "My Name" helps it stand out since size is now same */
+            font-weight: 700;
             text-decoration: none;
             color: #000;
             text-transform: uppercase;
@@ -60,10 +58,8 @@
             text-decoration: none;
             color: #000;
             
-            /* CHANGE 3: Capital letters */
             text-transform: uppercase; 
             
-            /* Font size is inherited from body (1.2rem) */
         }
 
         nav a:hover {
@@ -72,13 +68,11 @@
 
         /* Content Sections */
         section {
-            padding-top: 2rem; /* Reduced top padding since header line is gone */
+            padding-top: 2rem;
             padding-bottom: 6rem;
-            /* Removed section border to match cleaner look */
         }
 
         h2 {
-            /* CHANGE 2: Flattening hierarchy - same size as body text */
             font-size: 1.2rem; 
             font-weight: 700;
             margin-bottom: 1rem;
@@ -104,8 +98,8 @@
 
         footer {
             padding: 2rem 0;
-            font-size: 1.2rem; /* Consistent size */
-            text-align: left; /* Aligned left to match the grid feel */
+            font-size: 1.2rem;
+            text-align: left;
         }
     </style>
 </head>
@@ -113,11 +107,11 @@
 
     <header>
         <div class="logo">
-            <a href="index.html">EUNICE H JUNG</a>
+            <a href="index.html">EUNICE HYEYUN JUNG</a>
         </div>
         <nav>
             <a href="#about">About</a>
-            <a href="#publication">Publication</a>
+            <a href="#publication">Research</a>
             <a href="projects.html">Project</a>
         </nav>
     </header>
@@ -126,7 +120,7 @@
         <section id="about">
             <h2>About</h2>
             <div class="content-block">
-                <p>Hello! I am an engineering student with a background in design. My work focuses on the intersection of structural integrity and aesthetic form.</p>
+                <p>I am a licensed architect in Massachusetts and a PhD student at Stanford University in Civil and Environmental Engineering, focused on connecting building design with data-driven carbon reduction. </p>
             </div>
         </section>
 
@@ -142,7 +136,7 @@
     </main>
 
     <footer>
-        &copy; 2026 Eunice H Jung.
+        &copy; Eunice H Jung
     </footer>
 
 </body>
