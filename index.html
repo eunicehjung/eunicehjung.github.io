@@ -4,176 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EUNICE H JUNG</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: "Helvetica", "Arial", sans-serif;
-            background-color: #ffffff;
-            color: #000000;
-            line-height: 1.4;
-            font-size: 1.2rem;
-            
-            max-width: 1000px; 
-            margin: 0 auto; 
-            padding: 0 2rem; 
-
-            text-align: left;
-            font-weight: 400;
-        }
-
-        p {
-            text-align-last: left;
-        }
-
-        /* Header */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start; /* Aligns text to top if lines wrap */
-            padding: 1.6rem 0;
-            
-            border-bottom: none; 
-            
-            position: sticky;
-            top: 0;
-            background: rgba(255, 255, 255, 1);
-            z-index: 1000;
-        }
-
-        .logo a {
-            font-size: 1.4rem;
-            font-weight: 600;
-            
-            text-decoration: none;
-            color: #000;
-            text-transform: uppercase;
-        }
-
-        nav a {
-            margin-left: 2rem;
-            text-decoration: none;
-            color: #808080;
-            
-            font-weight: 400;
-            font-size: 1rem;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Content Sections */
-        section {
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
-        }
-
-        h2 {
-            font-size: 1.2rem; 
-            font-weight: 600;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-        }
-
-        .content-block {
-            max-width: 100%;
-            font-size: 1rem;
-        }
-
-        .about-layout {
-            display: flex;
-
-            flex-direction: row-reverse;
-
-            align-items: flex-start;
-            gap: 1.5rem;
-
-            justify-content: space-between;
-        }
-
-        .bio-image-wrapper {
-            width: 250px;
-            flex-shrink: 0;
-            text-align: center;
-        }
-
-        .bio-pic {
-            width: 250px;
-            display: block
-        }
-
-        .image-caption {
-            font-size: 0.9rem;
-            margin-top: 0.3rem;
-            line-height: 1.4;
-            color: #808080;
-        }
-
-        /* MOBILE RESPONSIVENESS */
-        @media (max-width: 768px) {
-            .about-layout {
-                flex-direction: column-reverse;
-                gap: 1.5rem;
-            }
-
-            .bio-pic {
-                width: 250px;
-                max-width: 100%;
-                margin: 0 auto;
-                text-align: center;
-            }
-        }
-
-        b {
-            font-weight: 600;
-        }
-
-        g {
-            color: #808080;
-            font-weight: 400;
-        }
-
-        p {
-            margin-bottom: 1.5rem;
-        }
-
-        ul {
-            list-style: none;
-        }
-        
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        p a, li a {
-            color: #808080;
-            text-decoration: underline;
-            transition: color 0.1s;
-        }
-
-        p a:hover, li a:hover {
-            color: #000000;
-        }
-
-        html {
-            scroll-behavior: smooth;
-
-            scroll-padding-top: 120px;
-        }
-
-        footer {
-            padding: 2rem 0;
-            font-size: 1rem;
-            color: #808080;
-
-            text-align: left;
-        }
-    </style>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <body id="top"></body>
@@ -184,7 +16,7 @@
         <nav>
             <a href="#top">About</a>
             <a href="#research">Research</a>
-            <a href="design.html">Design</a>
+            <a href="design.html" class="design-link">Design</a>
         </nav>
     </header>
 
@@ -197,9 +29,8 @@
                     <img src="profile.jpg" alt="Portrait of Eunice Jung" class="bio-pic">
 
                     <p class="image-caption">
-                        <a href="https://eeri.stanford.edu/student-spotlight-0/eunice-hyeyun-jung" target="_blank">Stanford EERI Story</a><br>
-                        <a href="https://www.linkedin.com/posts/cbt-architects_congratulations-to-cbts-own-eunice-hyeyun-activity-7141130534205693952-Y9NS/" target="_blank">BosNOMA Recognition Award</a>
-
+                        <a href="https://eeri.stanford.edu/student-spotlight-0/eunice-hyeyun-jung" target="_blank">Stanford EERI Student Spotlight</a><br>
+                        <a href="https://www.linkedin.com/posts/cbt-architects_congratulations-to-cbts-own-eunice-hyeyun-activity-7141130534205693952-Y9NS/" target="_blank">BosNOMA Recognition Award</a><br>
                     </p>
                 </div>
 
@@ -207,7 +38,7 @@
                     <p>I am a licensed architect in Massachusetts and a PhD student at Stanford University in <a href="https://cee.stanford.edu/" target="_blank">Civil and Environmental Engineering</a>, advised by <a href="https://profiles.stanford.edu/michael-lepech" target="_blank">Michael Lepech</a> and <a href="https://sdgc.stanford.edu/people/jie-wang" target="_blank">Jie Wang</a>. I focus on connecting building design with data-driven Life Cycle Assessment.<p>
                     <p>I worked for eight years in the architecture industry, specializing in complex facades and building systems for high-rise buildings after obtaining a <a href="https://www.gsd.harvard.edu/architecture/programs/master-of-architecture-i/" target="_blank">Master of Architecture</a> from Harvard Graduate School of Design. This hands-on experience inspired me to tackle the industry's critical challenge of high embodied carbon.<p>
                     <p>At Stanford University, I develop quantitative methods for <b>embodied carbon reduction of building design using Large Language Models</b>. My research aims to create an LLM-integrated framework, such as an AI agent, that empowers designers and engineers to reduce embodied carbon during critical early phases.</p>
-                    <p><a href="mailto:ehjung@stanford.edu">ehjung[at]stanford.edu</a> | <a href="https://www.linkedin.com/in/eunicehjung/" target="_blank">LinkedIn</a> | <a href="https://scholar.google.com/citations?user=3CByBJEAAAAJ&hl=en&inst=5746887945952177237&oi=ao" target="_blank">Google Scholar</a> | <a href="cv.pdf" target="_blank">CV (Dec 2025)</a><br>
+                    <p><a href="mailto:ehjung@stanford.edu">ehjung[at]stanford.edu</a> | <a href="https://www.linkedin.com/in/eunicehjung/" target="_blank">LinkedIn</a> | <a href="https://scholar.google.com/citations?user=3CByBJEAAAAJ&hl=en&inst=5746887945952177237&oi=ao" target="_blank">Google Scholar</a> | <a href="cv.pdf" target="_blank">CV</a><br>
                     </p>
                 </div>
 
@@ -217,9 +48,27 @@
         <section id="research">
             <h2>Research</h2>
             <div class="content-block">
-                <ul>
-                    <li>2026 — Large Language Models Based In-Context Learning for Early Stage Building Life Cycle Assessment, Proceedings of the 59th Hawaii International Conference on System Sciences (HICSS-59)</li>
-                    <li>2025 — Application of Generative Artificial Intelligence for Early Stage Building Life Cycle Assessment and Embodied Carbon Reduction Strategies, International Symposium on Sustainable Sysstems and Technology (ISSST)</li>
+                <ul class="research-list">
+
+                    <li class="research-item">
+                        <img src="HICSS.jpg" alt="HICSS Diagram" class="research-img">
+
+                        <div class="research-text">
+                            <p><b>Large Language Models Based In-Context Learning for Early Stage Building Life Cycle Assessment</b><br>
+                            Proceedings of the 59th Hawaii International Conference on System Sciences (HICSS-59), Jan 2026<br>
+                            <a href="https://scholarspace.manoa.hawaii.edu/server/api/core/bitstreams/e3b5b524-916d-4c72-99c2-e921b02f9960/content" target="_blank">Paper</a> | <a href="HICSS-presentation.pdf" target="_blank">Presentation</a></p>
+                        </div>
+                    </li>
+
+                    <li class="research-item">
+                        <img src="ISSST.jpg" alt="ISSST Diagram" class="research-img">
+
+                        <div class="research-text">
+                            <p><b>Application of Generative Artificial Intelligence for Early Stage Building Life Cycle Assessment</b><br>
+                            International Symposium on Sustainable Systems and Technology (ISSST), Jun 2025</p>
+                        </div>
+                    </li>
+
                 </ul>
             </div>
         </section>
