@@ -153,6 +153,11 @@ h2 {
         margin: 0 auto;
         height: auto;
     }
+
+    section {
+    scroll-margin-top: 30px;
+}
+
 }
 
 /* Bold */
