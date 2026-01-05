@@ -14,10 +14,10 @@ body {
     color: #000000;
     line-height: 1.4;
     font-size: 1.2rem;
-    
-    max-width: 1000px; 
-    margin: 0 auto; 
-    padding: 0 2rem; 
+
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
 
     text-align: left;
     font-weight: 400;
@@ -33,8 +33,8 @@ header {
     justify-content: space-between;
     align-items: flex-start; /* Aligns text to top if lines wrap */
     padding: 1.6rem 0;
-    
-    border-bottom: none; 
+
+    border-bottom: none;
 
     top: 0;
     z-index: 1000;
@@ -48,7 +48,7 @@ header {
 .logo a {
     font-size: 1.4rem;
     font-weight: 600;
-    
+
     text-decoration: none;
     color: #000;
     text-transform: uppercase;
@@ -58,13 +58,17 @@ nav a {
     margin-left: 2.4rem;
     text-decoration: none;
     color: #808080;
-    
+
     font-weight: 400;
     font-size: 1rem;
 }
 
 nav a:hover {
     text-decoration: underline;
+}
+
+.mobile-only {
+    display: none !important;
 }
 
 /* Content Sections */
@@ -75,7 +79,7 @@ section {
 }
 
 h2 {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
     text-transform: uppercase;
@@ -105,7 +109,7 @@ h2 {
 
 .bio-pic {
     width: 250px;
-    display: block
+    display: block;
 }
 
 .image-caption {
@@ -113,51 +117,6 @@ h2 {
     margin-top: 0.3rem;
     line-height: 1.4;
     color: #808080;
-}
-
-/* MOBILE RESPONSIVENESS */
-@media (max-width: 768px) {
-    .about-layout {
-        flex-direction: column-reverse;
-        gap: 1.5rem;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 0.5rem;
-    }
-
-    nav a {
-        margin-left: 0;
-        padding: 0.2rem 0;
-    }
-
-    .bio-image-wrapper {
-        margin: 0 auto;  /* This pushes the wrapper to the middle */
-        width: 250px;    /* Keep your fixed width */
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .research-item {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    #research .research-img {
-        width: 250px;
-        max-width: 100%;
-        display: block;
-        margin: 0 auto;
-        height: auto;
-    }
-
-    section {
-    scroll-margin-top: 30px;
-}
-
 }
 
 /* Bold */
@@ -246,7 +205,7 @@ a.design-link {
 
 a.design-link:hover {
     color: #F4C430;
-    text-decoratioin: underline:
+    text-decoration: underline;
 }
 
 .design-grid {
@@ -328,5 +287,56 @@ a.design-link:hover {
 .link-wrapper:hover .overlay {
     opacity: 1;
 }
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .about-layout {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        margin-left: 0;
+        padding: 0.2rem 0;
+    }
+
+    .bio-image-wrapper {
+        margin: 0 auto;  /* This pushes the wrapper to the middle */
+        width: 250px;    /* Keep your fixed width */
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .research-item {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    #research .research-img {
+        width: 250px;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    section {
+    scroll-margin-top: 30px;
+    }
+
+    .desktop-only {
+        display: none !important;
+    }
+
+    .mobile-only {
+        display: block !important;
+    }
 
 }
