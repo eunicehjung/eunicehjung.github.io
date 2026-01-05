@@ -71,6 +71,7 @@ nav a:hover {
 section {
     padding-top: 1.5rem;
     padding-bottom: 1rem;
+    scroll-margin-top: 100px;
 }
 
 h2 {
@@ -156,6 +157,7 @@ h2 {
 
 /* Bold */
 b {
+    color: #000000;
     font-weight: 600;
 }
 
