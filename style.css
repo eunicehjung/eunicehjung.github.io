@@ -57,7 +57,7 @@ header {
 nav a {
     margin-left: 2.4rem;
     text-decoration: none;
-    color: #88B04B;
+    color: #44883c;
 
     font-weight: 400;
     font-size: 1rem;
@@ -116,7 +116,7 @@ h2 {
     font-size: 1rem;
     margin-top: 0.3rem;
     line-height: 1.4;
-    color: #88B04B;
+    color: #44883c;
 }
 
 /* Bold */
@@ -127,7 +127,7 @@ b {
 
 /* Gray text */
 g {
-    color: #88B04B;
+    color: #808080;
     font-weight: 400;
 }
 
@@ -153,7 +153,7 @@ li {
 
 /* Typical hyperlink */
 p a, li a {
-    color: #88B04B;
+    color: #44883c;
     text-decoration: underline;
     transition: color 0.1s;
 }
@@ -162,9 +162,9 @@ p a:hover, li a:hover {
     color: #44883c;
 }
 
-/* Yellow hyperlink */
+/* light green hyperlink */
 a.yellow-link {
-    color: #44883c;
+    color: #88B04B;
     text-decoration: underline;
     transition: color 0.1s;
 }
@@ -194,17 +194,17 @@ html {
 footer {
     padding: 1.5rem 0;
     font-size: 1rem;
-    color: #88B04B;
+    color: #000000;
 
     text-align: left;
 }
 
 a.design-link {
-    color: #F4C430;
+    color: #88B04B;
 }
 
 a.design-link:hover {
-    color: #F4C430;
+    color: #44883c;
     text-decoration: underline;
 }
 
