@@ -57,7 +57,7 @@ header {
 nav a {
     margin-left: 2.4rem;
     text-decoration: none;
-    color: #44883c;
+    color: #808080;
 
     font-weight: 400;
     font-size: 1rem;
@@ -116,7 +116,7 @@ h2 {
     font-size: 1rem;
     margin-top: 0.3rem;
     line-height: 1.4;
-    color: #44883c;
+    color: #808080;
 }
 
 /* Bold */
@@ -131,9 +131,9 @@ g {
     font-weight: 400;
 }
 
-/* Green text */
+/* Yellow text */
 y {
-    color: #44883c;
+    color: #F4BB44;
     font-weight: 400;
 }
 
@@ -153,24 +153,24 @@ li {
 
 /* Typical hyperlink */
 p a, li a {
-    color: #44883c;
+    color: #808080;
     text-decoration: underline;
     transition: color 0.1s;
 }
 
 p a:hover, li a:hover {
-    color: #44883c;
+    color: #F4C430;
 }
 
-/* light green hyperlink */
+/* Yellow hyperlink */
 a.yellow-link {
-    color: #88B04B;
+    color: #F4C430;
     text-decoration: underline;
     transition: color 0.1s;
 }
 
 a.yellow-link:hover {
-    color: #88B04B;
+    color: #808080;
 }
 
 html {
@@ -194,7 +194,7 @@ html {
 footer {
     padding: 1.5rem 0;
     font-size: 1rem;
-    color: #000000;
+    color: #808080;
 
     text-align: left;
 }
