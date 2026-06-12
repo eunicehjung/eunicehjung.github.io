@@ -131,9 +131,9 @@ g {
     font-weight: 400;
 }
 
-/* Yellow text */
+/* Green text */
 y {
-    color: #F4BB44;
+    color: #88B04B;
     font-weight: 400;
 }
 
@@ -200,7 +200,7 @@ footer {
 }
 
 a.design-link {
-    color: #f4bb44;
+    color: #88B04B;
 }
 
 a.design-link:hover {
