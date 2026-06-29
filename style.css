@@ -159,12 +159,12 @@ p a, li a {
 }
 
 p a:hover, li a:hover {
-    color: #F4C430;
+    color: #44883c;
 }
 
 /* Yellow hyperlink */
 a.yellow-link {
-    color: #F4C430;
+    color: #44883c;
     text-decoration: underline;
     transition: color 0.1s;
 }
